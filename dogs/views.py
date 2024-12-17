@@ -8,3 +8,6 @@ def get_dogs(request):
         'dog': dog
     }
     return render(request, 'dogs.html', context)
+
+
+
