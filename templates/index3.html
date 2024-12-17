@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" id="title" placeholder="Название поста" required>
+        <input type="text" name="content" id="content" placeholder="Содержание поста" required>
+        <input type="checkbox" name="is_published" id="is_published">
+        
+        <select id="category" name="category" required>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+
+        <button type="submit">Отправить</button>
+    </form> 
+</body>
+</html>
